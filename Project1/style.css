@@ -1,0 +1,79 @@
+body{background-color: lightgray;}
+
+
+
+.pinkbox{
+    flex-wrap: wrap;
+    height: 500px;
+    background-color: lightpink;
+    padding-left: 4%;
+    border-style: solid;
+    border-color: blueviolet;
+}
+
+.smallbox{
+    width: 32%;
+    height: 40%;
+    float: left;
+    margin-bottom: 1%;
+    padding-inline: 2%;
+  
+}
+
+.textbox{
+    width: 60%;
+    height: 40%;
+    float: left;
+    margin-bottom: 1%;
+}
+
+.color {
+    background-color: greenyellow;
+}
+
+.money{
+    text-align: right;
+}
+
+
+
+.moscowpage{
+    flex-wrap: wrap;
+    padding: 1%;
+    height: 230px;
+    
+    
+}
+
+.moscowbox{
+    flex-wrap: wrap;
+    width: 31%;
+    height: 100%;
+    float: left;
+    background-color: brown;
+    margin-left: 1%;
+    border: 2px solid;
+}
+.picturebox{
+    width: 100%;
+    height: 100%;
+
+}
+
+.moscowbox1{
+    width: 31%;
+    height: 100%;
+    float: left;
+    background-color: lightgrey;
+    margin-left: 1%;
+    border: 2px solid red;
+    
+}
+
+.textmoscowbox{
+    width: 90%;
+    text-align: center;
+    padding: 5%;
+    
+
+}
