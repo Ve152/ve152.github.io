@@ -1,0 +1,78 @@
+.BoxOne {
+    height: 500px;
+    width: 1000px;
+    background-color: aquamarine;
+    position: relative;
+    
+   
+}
+
+.BoxOne > img {
+    height: 100%;
+    width: 100%;
+}
+
+.BoxText{
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    background-color:rgba(36, 39, 212, 0.473);
+    border-radius: 10px; 
+    
+}
+
+.Clock > img{
+    position: absolute;
+    top: 10%;
+    width: 200px;
+    height: 200px;
+    left: 5%;
+    background-color: rgba(182, 226, 226, 0.274);
+    border-radius: 100px;
+    
+    
+}
+.hour > img{
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    top: 27%;
+    left: 15% ;
+    animation: hourMotion 360s infinite linear;
+    transform-origin: left;
+    
+   
+
+
+}
+
+.min > img{
+    position: absolute;
+    height: 30px;
+    width: 70px;
+    box-sizing: border-box;
+    top: 27%;
+    left: 15%;
+    animation: minMotion 60s infinite linear;
+    transform-origin: left;
+
+}
+@keyframes minMotion {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hourMotion {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
