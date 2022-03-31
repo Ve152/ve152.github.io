@@ -1,8 +1,10 @@
 .BoxOne {
     height: 500px;
-    width: 100%;
+    width: 1000px;
     background-color: aquamarine;
     position: relative;
+    
+   
 }
 
 .BoxOne > img {
@@ -15,8 +17,9 @@
     position: absolute;
     top: 70%;
     left: 40%;
-    background-color:rgba(39, 39, 134, 0.3);
+    background-color:rgba(36, 39, 212, 0.473);
     border-radius: 10px; 
+    
 }
 
 .Clock > img{
@@ -27,16 +30,20 @@
     left: 5%;
     background-color: rgba(182, 226, 226, 0.274);
     border-radius: 100px;
+    
+    
 }
 .hour > img{
     position: absolute;
     height: 30px;
-    width: 70px;
-    box-sizing: border-box;
+    width: 50px;
     top: 27%;
-    left: 15.9%;
-    animation: hourMotion 3600s infinite linear;
-    transform-origin: left
+    left: 15% ;
+    animation: hourMotion 360s infinite linear;
+    transform-origin: left;
+    
+   
+
 
 }
 
@@ -46,14 +53,14 @@
     width: 70px;
     box-sizing: border-box;
     top: 27%;
-    left: 15.9%;
-    animation: minMotion 3600s infinite linear;
-    transform-origin: left
+    left: 15%;
+    animation: minMotion 60s infinite linear;
+    transform-origin: left;
 
 }
 @keyframes minMotion {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(-90deg);
     }
     100% {
         transform: rotate(360deg);
@@ -65,6 +72,7 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(30deg);
+        transform: rotate(360deg);
     }
 }
+
