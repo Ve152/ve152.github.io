@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Game App | Guess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Guess my number</h1>
+    <h2 class="subtitle">Guess the number between 1 and 100</h2>
+    <div class="container">
+        <div class="stats-row">
+            <div class="score-block">
+                <div class="score">Score: 10</div>
+                <div class="high-score">High Score: -</div>
+            </div>
+            <button class="reset">Reset</button>
+        </div>
+
+        <div class="main">
+            <img src="img/confused.png" alt="Guess" class="image">
+            <input class="guess" type="text" name="" id="" placeholder="Guess a number">
+            <button class="check">Check</button>
+            <div class="hint">Guess a Number</div>
+
+            <div class="win-panel">
+                <div class="win-title">Congratulation</div>
+                <div class="win-desc">Your guess was correct. <span class="secret-num">-</span> is my secret number</div>
+                <div class="your-score">-</div>
+                <div class="best-score">-</div>
+                <button class="again">Play Again</button>
+            </div>
+
+            <div class="lose-panel">
+                <div class="lose-title">Unfortunately You Lost the Game</div>
+                <div class="lose-desc">Don't give up and Try Again. You can win next time.</div>
+                <div class="lose-was">My number was: <span class="secret-num-lose">-</span></div>
+                <button class="try-again">Try Again</button>
+            </div>
+        </div>
+
+        <div class="history">
+            <h4 class="history-title">Guess History</h4>
+            <ul class="history-list"></ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

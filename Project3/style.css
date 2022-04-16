@@ -1,0 +1,210 @@
+:root {
+    --bg: #94e0d5;
+    font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+}
+
+.title {
+    margin-bottom: 0;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #444444;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+.subtitle {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    padding: 1.5rem;
+    background-color: #eff9fa;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 1px 0px 10px 0.5px #eff9fa;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+.score-block,
+.reset {
+    padding: 1.5rem;
+    background-color: rgb(245, 173, 173);
+    border-radius: 5px;
+}
+
+.score-block {
+    line-height: 1.5;
+}
+
+.reset {
+    font-size: 1.7rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+.reset:hover {
+    background-color: rgb(250, 196, 196);
+}
+
+.main {
+    margin-top: 4rem;
+    width: 75%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0b09b;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 0 #c79078;
+    transition: all .3s ease-in-out;
+}
+
+.image {
+    margin: 2rem 0 1rem 0;
+    width: 25%;
+    height: auto;
+}
+
+.main.win {
+    background-color: #9acfa3;
+    box-shadow: 0 1px 10px 0 rgb(95, 167, 92);
+}
+
+.main.win .guess,
+.main.win .check,
+.main.win .hint,
+.main.lose .guess,
+.main.lose .check,
+.main.lose .hint {
+    display: none;
+}
+
+.win-panel {
+    display: none;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.win-title,
+.your-score,
+.secret-num {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.best-score {
+    font-weight: 600;
+}
+
+.main.win .win-panel {
+    display: block;
+}
+
+.lose-panel {
+    display: none;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.lose-title,
+.secret-num-lose {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #1c1033;
+}
+
+.main.lose .lose-panel {
+    display: block;
+}
+
+.guess {
+    margin: 1rem auto;
+    border: none;
+    outline: none;
+    padding: 1.25rem 0.5rem;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.6rem
+}
+
+.check,
+.again,
+.try-again {
+    margin: 1rem 0 5rem 0;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    background-color: #5db851;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+.again,
+.try-again {
+    margin-bottom: 1rem;
+}
+
+.check:hover,
+.again:hover,
+.try-again:hover {
+    background-color: #84ca7a;
+}
+
+.hint {
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.history {
+    text-align: left;
+    margin-top: 4rem;
+    width: 50%;
+    padding: 1rem;
+    align-self: center;
+    background-color: #abcce2;
+    border-radius: 10px;
+    box-shadow: 0 0px 5px 0 #799bb3;
+    font-size: 1.6rem;
+}
+
+.history-title {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.history-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
